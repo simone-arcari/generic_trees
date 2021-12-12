@@ -12,7 +12,6 @@
 #define GENERIC_TREE_H_
 
 
-/* structure node of a generic tree */
 /**
  * @typedef: tree_t
  * @struct: tree

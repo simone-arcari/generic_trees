@@ -59,11 +59,7 @@ queue_t **create_queue(void) {
 }
 
 queue_t *enqueue(queue_t **head, tree_t *T) {
-/*
-	@descr: inserisce sempre in coda
-	@param head: sentinella
-	@param T: albero da inserire in coda
-*/
+
 	queue_t *new_tail = malloc(sizeof(queue_t));
 	if(new_tail==NULL) {
 		fprintf(stderr, "ERR in malloc: [queue_t *new_tail = malloc(sizeof(queue_t));].\n");

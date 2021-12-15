@@ -32,7 +32,6 @@ typedef struct tree {
 	struct tree *sibling;
 }tree_t;
 
-
 /**
  * @typedef	stack_t
  *		Contains all stack properties. The structure is that of a node
@@ -58,6 +57,8 @@ typedef struct queue {
 	tree_t *tree;
 	struct queue *next;
 }queue_t;
+
+
 
 
 
@@ -99,6 +100,8 @@ tree_t *pop(stack_t **top);
 
 
 
+
+
 /* FUNCTIONS FOR THE QUEUE STRUCTURE */
 
 /**
@@ -137,7 +140,19 @@ tree_t *dequeue(queue_t **head);
 
 
 
-/* FUNCTIONS FOR THE TREE STRUCTURE */
+
+
+/**** FUNCTIONS FOR THE TREE STRUCTURE ****/
+
+/**
+ * @function    Tree
+ * @abstract    Puts the data at the end of the queue structure.
+ * @discussion  Always takes a node at the head, it's like normal remove from
+ *		the head for the lists.
+ *		
+ * @param 	head	Double pointer to queue.
+ * @result 	A pointer to the extracted node, if empty return NULL.
+*/
 tree_t *Tree(int val);
 
 tree_t *insert_child(tree_t *P, tree_t *T);
